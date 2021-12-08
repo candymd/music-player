@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="SHPinscher-Regular.ttf" as="font" type="font/ttf" crossorigin>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <title>music player</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top-ui">
+          <p>Made by Candy Montero</p> 
+          <a href="https://github.com/candymd" target="blank"><img src="/img/github.png"></a>
+        </div>
+        <p id="title"></p>
+            <img id="cover">
+
+        <audio src="music/ukulele.mp3" id="audio"></audio>
+           
+            <div class="navigation">
+                <button id="prev" class="action-btn" >
+                    <img id="prev-img" src="/img/previous-thin.svg">
+                  <i class="fas fa-backward"></i>
+                </button>
+                <button id="play" class="action-btn action-btn-big" >
+                    <img id="play-img" src="/img/play-thin.svg">
+                  <i class="fas fa-play"></i>
+                </button>
+                <button id="next" class="action-btn" >
+                    <img id= "next-img" src="/img/next-thin.svg" alt="play next button">
+                  <i class="fas fa-forward"></i>
+                </button>
+            </div>
+            <div class="volume">
+           <img id="volume" src="/img/volume.svg">
+        <input type="range" min="1" max="100" value="50" class="slider" id="volume-control">
+    </div>
+
+    </div>
+
+</body>
+
+</html>
