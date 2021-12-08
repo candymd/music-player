@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    console.log( "ready!" );
+
 
 
 const musicContainer = document.getElementById('media-btn');
@@ -29,8 +29,11 @@ function playSong () {
     isPlaying = true;
       $("#play-img").attr("src", "img/pause-thin.svg");
       audio.play();
+      audio.loop= true;
+      
         
 }
+
 
 function pauseSong () {
     isPlaying = false;
@@ -41,7 +44,6 @@ function pauseSong () {
 
 function playOrPause (){
 
-    console.log('working')
   if (isPlaying == false) {
     return playSong();
  }
