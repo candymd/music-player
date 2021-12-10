@@ -7,7 +7,7 @@ body {
 
 @font-face {
     font-family: 'SH Pinscher';
-    src: url('/font/SHPinscher-Regular.ttf') format('truetype');
+    src: url('font\SHPinscher-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
